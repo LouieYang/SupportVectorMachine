@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		CD00DC021C8667FD00B67FF4 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CD00DC011C8667FD00B67FF4 /* main.cpp */; };
+		CD00DC0A1C86683D00B67FF4 /* SVM.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CD00DC081C86683D00B67FF4 /* SVM.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +26,8 @@
 /* Begin PBXFileReference section */
 		CD00DBFE1C8667FD00B67FF4 /* SVM */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = SVM; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD00DC011C8667FD00B67FF4 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		CD00DC081C86683D00B67FF4 /* SVM.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SVM.cpp; sourceTree = "<group>"; };
+		CD00DC091C86683D00B67FF4 /* SVM.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = SVM.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +61,8 @@
 			isa = PBXGroup;
 			children = (
 				CD00DC011C8667FD00B67FF4 /* main.cpp */,
+				CD00DC081C86683D00B67FF4 /* SVM.cpp */,
+				CD00DC091C86683D00B67FF4 /* SVM.hpp */,
 			);
 			path = SVM;
 			sourceTree = "<group>";
@@ -118,6 +123,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD00DC0A1C86683D00B67FF4 /* SVM.cpp in Sources */,
 				CD00DC021C8667FD00B67FF4 /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -207,6 +213,7 @@
 		CD00DC061C8667FD00B67FF4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				HEADER_SEARCH_PATHS = /usr/local/include;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -214,6 +221,7 @@
 		CD00DC071C8667FD00B67FF4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				HEADER_SEARCH_PATHS = /usr/local/include;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
